@@ -2,6 +2,8 @@ from django.db import models
 from django.core.validators import  MinValueValidator
 # Create your models here.
 
+
+# order models
 class Order(models.Model):
     side_option = [
         ('buy', 'buy'),

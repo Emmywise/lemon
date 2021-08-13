@@ -7,7 +7,8 @@ from .serializers import OrderSerializer
 
 class Order(APIView):
 
-    def post(self, request): # post request for market order
+    # post request for market order
+    def post(self, request): 
         serializer = OrderSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True): 
             serializer.save() 
